@@ -4,8 +4,11 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ Chetabahana ]
+    branches:
+      - '*'
+      - '!master'
+      - '!backup'
+      - '!Chetabahana'
 
 jobs:
   deploy:
