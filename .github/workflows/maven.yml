@@ -28,6 +28,9 @@ jobs:
         printenv
         java -jar lib/saxon9he.jar xsltdoc-config.xml xsl/xsltdoc.xsl
         cd $HOME && ls -al
-#        eval `ssh-agent` && expect $HOME/.ssh/agent
+        sudo apt-get update
+        sudo apt-get --assume-yes install expect
+        eval `ssh-agent`
+#         && expect $HOME/.ssh/agent
 #        git clone git@github.com:Chetabahana/chetabahana.github.io.git
 #        cd $GITHUB_WORKSPACE/chetabahana.github.io && ls -al
