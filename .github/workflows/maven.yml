@@ -6,8 +6,6 @@ name: Java CI with Maven
 on:
   push:
     branches: [ Chetabahana ]
-  pull_request:
-    branches: [ Chetabahana ]
 
 jobs:
   deploy:
@@ -18,3 +16,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Run Xsltdoc
+      run: |
+        printenv
+        cd $GITHUB_WORKSPACE && ls -al
+        java -jar lib/saxon9he.jar xsltdoc-config.xml xsl/xsltdoc.xsl

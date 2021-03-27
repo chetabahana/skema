@@ -5,7 +5,11 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ Chetabahana ]
+    branches:
+      - '*'
+      - '!master'
+      - '!backup'
+      - '!Chetabahana'
 
 jobs:
   deploy:
