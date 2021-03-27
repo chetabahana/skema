@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XSLTdoc/XSLTdoc.git"
+    "url": "git+https://github.com/chetabahana/skema.git"
   },
   "keywords": [
     "xslt",
@@ -23,7 +23,8 @@
   "author": "Iwan Birrer",
   "contributors": [
     "Chris Maloney <voldrani@gmail.com>",
-    "David Rekowski"
+    "David Rekowski",
+    "Chetabahana"
   ],
   "license": "GPL-3.0",
   "bugs": {
