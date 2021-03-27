@@ -21,4 +21,4 @@ jobs:
         printenv
         cd $GITHUB_WORKSPACE && ls -al
         npm update minimatch request
-        npm install -g xsltdoc
+#         npm install -g xsltdoc
