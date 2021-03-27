@@ -9,6 +9,7 @@ on:
       - '*'
       - '!master'
       - '!backup'
+      - '!workflows'
       - '!Chetabahana'
 
 jobs:
