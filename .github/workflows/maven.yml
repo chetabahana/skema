@@ -24,4 +24,5 @@ jobs:
       run: |
         printenv
         java -jar lib/saxon9he.jar xsltdoc-config.xml xsl/xsltdoc.xsl
-        cd $GITHUB_WORKSPACE/doc && ls -al
+        git clone git@github.com:Chetabahana/chetabahana.github.io.git
+        cd $GITHUB_WORKSPACE/chetabahana.github.io && ls -al
