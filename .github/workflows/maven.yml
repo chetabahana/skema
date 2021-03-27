@@ -26,7 +26,7 @@ jobs:
     - name: Run Xsltdoc
       run: |
         printenv
-        java -jar lib/saxon9he.jar xsltdoc-config.xml xsl/xsltdoc.xsl
+        java -jar lib/saxon-he-10.3.jar xsltdoc-config.xml xsl/xsltdoc.xsl
         cd $GITHUB_WORKSPACE/docs && ls -alR
         sudo apt-get update > /dev/null 2>&1
         sudo apt-get --assume-yes install expect > /dev/null 2>&1
