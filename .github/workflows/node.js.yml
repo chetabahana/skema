@@ -8,14 +8,14 @@ on:
     branches: [ Chetabahana ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Setup node 10
+    - name: Setup node 12
       uses: actions/setup-node@v2
       with:
-        node-version: 10.x
+        node-version: 12.x
     - name: Run Package
       run: |
         printenv
