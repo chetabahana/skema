@@ -1283,7 +1283,7 @@
     <xsl:choose>
       <xsl:when test="$dec &lt; 0">
         <xsl:text>-</xsl:text>
-        <xsl:value-of select="xd:decToBase(-$dec, $digits)"/>
+        <xsl:value-of select="xd:decToBase($dec, $digits)"/>
       </xsl:when>
       <xsl:when test="$dec = 0">0</xsl:when>
       <xsl:otherwise>
