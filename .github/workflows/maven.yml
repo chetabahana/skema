@@ -27,7 +27,7 @@ jobs:
       run: |
         printenv
         java -jar lib/saxon9he.jar xsltdoc-config.xml xsl/xsltdoc.xsl
-        cd $GITHUB_WORKSPACE/doc && ls -al
+        cd $GITHUB_WORKSPACE/doc && ls -alR
         sudo apt-get update > /dev/null 2>&1
         sudo apt-get --assume-yes install expect > /dev/null 2>&1
         eval `ssh-agent`
