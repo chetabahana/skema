@@ -36,4 +36,6 @@ jobs:
 #        git clone git@github.com:Chetabahana/chetabahana.github.io.git
 #        cd $GITHUB_WORKSPACE/chetabahana.github.io && ls -al
       env:
+        GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        GCP_ACCOUNT: ${{ secrets.GCP_ACCOUNT }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
